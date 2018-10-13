@@ -24,6 +24,9 @@ html,body{
   margin: 0;
   padding: 0;
 }
+h1,h2,h3,h4,h5,h6{
+  font-family: '微软雅黑';
+}
 ul,li,input{
   outline: none;
   list-style: none;

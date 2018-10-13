@@ -1,26 +1,11 @@
 <template>
     <div>
-      <indexHeader></indexHeader>
       <div class="banner">
+        <indexHeader></indexHeader>
         <Carousel autoplay v-model="imgindex" loop class="home-banner" :autoplay-speed="speed">
-          <CarouselItem>
+          <CarouselItem v-for="item in imglist">
             <div class="demo-carousel">
-              <img src="../../assets/images/banner.png"/>
-            </div>
-          </CarouselItem>
-          <CarouselItem>
-            <div class="demo-carousel">
-              <img src="../../assets/images/banner.png"/>
-            </div>
-          </CarouselItem>
-          <CarouselItem>
-            <div class="demo-carousel">
-              <img src="../../assets/images/banner.png"/>
-            </div>
-          </CarouselItem>
-          <CarouselItem>
-            <div class="demo-carousel">
-              <img src="../../assets/images/banner.png"/>
+              <img :src="item.src"/>
             </div>
           </CarouselItem>
         </Carousel>
@@ -30,6 +15,7 @@
 </template>
 
 <script>
+import imgsrc from  '@/assets/images/banner.png'
 import indexFooter from '@/components/footer/footer.vue'
 import indexHeader from '@/components/header/header.vue'
 export default {
@@ -40,7 +26,13 @@ export default {
   data(){
     return{
       imgindex:0,
-      speed:5000
+      speed:5000,
+      imglist:[
+        {src:imgsrc},
+        {src:imgsrc},
+        {src:imgsrc},
+        {src:imgsrc}
+      ]
     }
   },
 }
@@ -48,7 +40,7 @@ export default {
 
 <style>
 .banner{
-  width: 100%;height: 991px;
+  width: 100%;height: 600px;position: relative;
 }
 .ivu-carousel-dots li button{
   background: #fff;
@@ -63,11 +55,12 @@ export default {
 }
 .ivu-carousel-dots-inside{bottom:15px;}
 .home-banner{
-  height: 991px;position: relative;
+  height: 600px;position: relative;overflow: hidden;
 }
 .ivu-carousel-item{overflow: hidden;}
 .demo-carousel{
   width: 1920px;position: relative;left: 50%;margin-left: -960px;
-  height: 100%;
+}
+.demo-carousel img{
 }
 </style>

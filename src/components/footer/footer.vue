@@ -33,7 +33,7 @@
           <ul class="footer-list">
             <li class="first-list"><h4>关于我们</h4></li>
             <li class="list">
-              <a href="">关于我们</a>
+              <a href="/about">关于我们</a>
             </li>
             <li class="list">
               <a href="">加入我们</a>

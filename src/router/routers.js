@@ -28,7 +28,16 @@ export default [
       hideInMenu: true,
       notCache: true
     },
-    component: () => import('@/view/index/index')
+    component: () => import('@/view/index/index.vue')
+  },
+  {
+    path: '/about',
+    name: 'about',
+    meta: {
+      hideInMenu: true,
+      notCache: true
+    },
+    component: () => import('@/view/aboutwe/aboutwe.vue')
   },
   {
     path: '/401',

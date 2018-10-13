@@ -27,7 +27,7 @@ export default {
         {name:'首页',herf:'/',select:false},
         {name:'产品',herf:'/',select:false},
         {name:'商务合作',herf:'/',select:false},
-        {name:'关于我们',herf:'/',select:false},
+        {name:'关于我们',herf:'/about',select:false},
       ]
     }
   },
@@ -40,7 +40,7 @@ export default {
 }
 </script>
 <style scoped>
-.header{position: fixed;width: 100%;z-index: 2;}
+.header{position: absolute;width: 100%;z-index: 2;}
 .header .logo{float: left;margin-left: 100px;margin-top: 40px;}
 .header .tab{float: right;margin-right: 100px;margin-top: 50px;}
 .header .tab a{color: #2C2C31;font-size: 16px;margin-left: 40px;font-weight: bold;display: inline-block;position: relative;}
