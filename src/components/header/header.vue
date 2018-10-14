@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="logo">
-      <a href=""><img src="../../assets/images/logo2x.png" /></a>
+      <a href="/#/"><img src="../../assets/images/logo2x.png" /></a>
     </div>
     <div class="tab">
       <router-link :to="{name:item.herf}" v-for="item in tablist">

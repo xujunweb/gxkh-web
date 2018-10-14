@@ -2,7 +2,7 @@
     <div class="footer">
       <div class="footer-content">
         <div class="footer-left">
-          <a href=""><img src="../../assets/images/logo.png" class="logo" /></a>
+          <a href="/#/"><img src="../../assets/images/logo.png" class="logo" /></a>
           <div class="companyInfo">
             <p class="comp-phone">联系电话：0755-25320456</p>
             <p class="comp-name">公司名称：深圳市梦宝智能科技有限公司</p>
@@ -12,37 +12,37 @@
           <ul class="footer-list">
             <li class="first-list"><h4>产品</h4></li>
             <li class="list">
-              <a href="">经典版</a>
+              <a href="/#/">经典版</a>
             </li>
             <li class="list">
-              <a href="">加大版</a>
+              <a href="/#/">加大版</a>
             </li>
             <li class="list">
-              <a href="">迷你版</a>
+              <a href="/#/">迷你版</a>
             </li>
           </ul>
           <ul class="footer-list">
             <li class="first-list"><h4>商务合作</h4></li>
             <li class="list">
-              <a href="">微博</a>
+              <a href="/#/">微博</a>
             </li>
             <li class="list">
-              <a href="">微信</a>
+              <a href="/#/">微信</a>
             </li>
           </ul>
           <ul class="footer-list">
             <li class="first-list"><h4>关于我们</h4></li>
             <li class="list">
-              <a href="/about">关于我们</a>
+              <a href="/#/about">关于我们</a>
             </li>
             <li class="list">
-              <a href="">加入我们</a>
+              <a href="/#/">加入我们</a>
             </li>
             <li class="list">
-              <a href="">联系我们</a>
+              <a href="/#/">联系我们</a>
             </li>
             <li class="list">
-              <a href="">服务协议</a>
+              <a href="/#/">服务协议</a>
             </li>
           </ul>
           <div class="clear"></div>
