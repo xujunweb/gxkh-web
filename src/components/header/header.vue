@@ -28,7 +28,7 @@ export default {
       tablist:[
         {name:'首页',herf:'home',select:false},
         {name:'产品',herf:'home',select:false},
-        {name:'商务合作',herf:'home',select:false},
+        {name:'商务合作',herf:'jointwork',select:false},
         {name:'关于我们',herf:'about',select:false},
       ]
     }

@@ -40,6 +40,15 @@ export default [
     component: () => import('@/view/aboutwe/aboutwe.vue')
   },
   {
+    path: '/jointwork',
+    name: 'jointwork',
+    meta: {
+      hideInMenu: true,
+      notCache: true
+    },
+    component: () => import('@/view/jointwork/jointwork.vue')
+  },
+  {
     path: '/401',
     name: 'error_401',
     meta: {

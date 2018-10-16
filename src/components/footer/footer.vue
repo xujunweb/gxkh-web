@@ -8,6 +8,16 @@
             <p class="comp-name">公司名称：深圳市梦宝智能科技有限公司</p>
           </div>
         </div>
+        <div class="middle">
+          <div class="public">
+            <img src="../../assets/images/public.png" />
+            <p>微信公众号</p>
+          </div>
+          <div class="xcxm">
+            <img src="../../assets/images/xcxm.jpg" />
+          </div>
+          <div class="clear"></div>
+        </div>
         <div class="footer-right">
           <ul class="footer-list">
             <li class="first-list"><h4>产品</h4></li>
@@ -76,7 +86,7 @@ export default {
 </script>
 <style scoped>
   .footer{width: 100%;padding-top: 50px;background: #fff;padding-bottom: 30px;}
-  .footer .footer-content{width: 1000px;margin: 0 auto;}
+  .footer .footer-content{margin: 0 auto;padding: 0 60px;}
   .footer .footer-left{float: left;}
   .footer .footer-right{float: right;}
   .companyInfo{color: #646464;font-size: 16px;margin-top: 40px;}
@@ -87,4 +97,8 @@ export default {
   .footer-list li{margin-bottom: 15px;font-size: 14px;}
   .footer-list li a{color: #646464;}
   .footer-list li a:hover{text-decoration: underline;}
+  .middle{float: left;margin-left: 30px;}
+  .middle .public{float: left;text-align: center;font-size: 12px;margin-right: 30px;}
+  .middle .xcxm{float: left}
+  .middle img{float: left;width: 150px;}
 </style>
