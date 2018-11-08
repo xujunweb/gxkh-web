@@ -5,7 +5,7 @@
         <Carousel autoplay v-model="imgindex" loop class="home-banner" :autoplay-speed="speed">
           <CarouselItem v-for="item in imglist">
             <div class="demo-carousel">
-              <img :src="item.src"/>
+              <img :src="item"/>
             </div>
           </CarouselItem>
         </Carousel>
@@ -16,8 +16,10 @@
 
 <script>
 import imgsrc from  '@/assets/images/banner.png'
+import banner1 from '@/assets/images/banner1.jpg'
 import indexFooter from '@/components/footer/footer.vue'
 import indexHeader from '@/components/header/header.vue'
+import { getAllinfo } from  '@/api/user'
 export default {
   name: "index",
   components:{
@@ -28,13 +30,24 @@ export default {
       imgindex:0,
       speed:5000,
       imglist:[
-        {src:imgsrc},
-        {src:imgsrc},
-        {src:imgsrc},
-        {src:imgsrc}
+
       ]
     }
   },
+  created(){
+    this.getAllinfo()
+  },
+  methods:{
+    getAllinfo () {
+      getAllinfo().then(res => {
+        const data = res.data
+        console.log('所有配置',res)
+        this.imglist = data.data[4].value.split(',')
+      }).catch(err => {
+        console.log(err)
+      })
+    },
+  }
 }
 </script>
 

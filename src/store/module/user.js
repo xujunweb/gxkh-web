@@ -4,7 +4,7 @@ import { setToken, getToken } from '@/libs/util'
 export default {
   state: {
     userName: '',
-    userId: '',
+    userId: '1000000',
     avatorImgPath: '',
     token: getToken(),
     access: ''
