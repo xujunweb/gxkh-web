@@ -24,12 +24,6 @@
 <script>
   import indexFooter from '@/components/footer/footer.vue'
   import indexHeader from '@/components/header/header.vue'
-  import productimg from '../../assets/images/productImg.png'
-  import productimg2 from '../../assets/images/productImg2.png'
-  import productimg3 from '../../assets/images/productImg3.png'
-  import productimg4 from '../../assets/images/productImg4.png'
-  import productimg5 from '../../assets/images/productImg5.png'
-  import productimg6 from '../../assets/images/productImg6.png'
   import { getAllinfo } from  '@/api/user'
   export default {
     name: "product",
@@ -39,14 +33,7 @@
     data(){
       return{
         selectIndex:1,
-        productlist:[
-          {img:productimg,title:'二代智能柜床，折叠状态'},
-          {img:productimg2,title:'二代智能柜床，细节展示'},
-          {img:productimg3,title:'二代智能柜床，正面尺寸'},
-          {img:productimg4,title:'二代智能柜床，全貌'},
-          {img:productimg5,title:'二代智能柜床，侧面尺寸'},
-          {img:productimg6,title:'二代智能柜床，正面尺寸'}
-        ],
+        productlist:[],
         imgName: '',
         visible:false,
       }
@@ -65,7 +52,7 @@
         getAllinfo().then(res => {
           const data = res.data
           console.log('所有配置',res)
-          // this.productlist = data.data[5].value.split(',')
+          this.productlist = JSON.parse(data.data[5].value)
         }).catch(err => {
           console.log(err)
         })
