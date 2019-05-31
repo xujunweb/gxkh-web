@@ -5,7 +5,7 @@
     </div>
     <div class="product-content">
       <div class="vdieo">
-        <video src="../../assets/video/course.mp4" controls="controls" height="400" width="1300" preload="auto"></video>
+        <video src="../../assets/video/course.mp4" controls="controls" height="747.5" width="1300" preload="auto"></video>
       </div>
       <div class="product-list">
         <div class="product-item" v-for="item in productlist">
@@ -65,7 +65,7 @@
         getAllinfo().then(res => {
           const data = res.data
           console.log('所有配置',res)
-          // this.productlist = data.data[5].value.split(',')
+          this.productlist = JSON.parse(data.data[5].value)
         }).catch(err => {
           console.log(err)
         })
@@ -78,10 +78,11 @@
   .product-content{
     background: #F0F4F8;overflow: hidden;
     .vdieo{
-      width: 1300px;height: 400px;background: #fff;margin: 50px auto;background: #000;
+      width: 1300px;height: 747.5px;background: #fff;margin: 50px auto;background: #000;
     }
     .product-list{
-      display: flex;width: 1300px;margin: 0 auto;flex-wrap: wrap;justify-content: space-between;
+      display: flex;width: 1300px;margin: 0 auto;flex-wrap: wrap;
+      justify-content: space-between;
       .product-item{
         background: #fff;border: 1px solid #DADADA;border-radius: 8px;overflow: hidden;margin-bottom: 50px;
         img{width: 400px;height: 300px;}
